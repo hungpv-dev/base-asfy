@@ -1,34 +1,25 @@
+
 <?php
-require_once './vendor/artisan/src/Make.php';
 
-use Artisan\Make;
+require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/config/artisan.php';
 
-if (count($argv) <= 1) {
-    include './vendor/artisan/help.php';
-    die();
+function logHelp($type, $msg)
+{
+    $colors = [
+        'info' => '0;36',   
+        'warning' => '1;33',
+        'success' => '1;32',
+        'danger' => '1;31', 
+    ];
+    $colorCode = $colors[$type] ?? '0'; // Màu mặc định (đen)
+    $padding = str_repeat(' ', max(0, 20 - strlen($type)));
+    echo "\e[{$colorCode}m" . strtoupper($type) . "\e[0m" . $padding . ": \e[0;37m" . $msg . "\e[0m\n";
 }
 
-$data = null;
-$config = null;
-$attributes = $argv[1];
-if (isset($argv[2])) {
-    $data = $argv[2];
-}
-if (isset($argv[3])) {
-    $config = $argv[3];
-}
+use AsfyCode\Artisan\Artisan;
 
-$attributes = explode(':', $attributes);
+$artisan = new Artisan();
 
-$key = $attributes[0];
-$type = $attributes[1] ?? false;
+$artisan->run();
 
-switch ($key) {
-    case 'make': {
-            if ($type) {
-                $make = new Make($data, $config);
-                $make->handle($type);
-            }
-            break;
-        }
-}

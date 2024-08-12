@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "995de7abc9c467fad2a7afcf12dc71b9",
+    "content-hash": "c2dc4fad44ecc5ea755ee78bc05761ac",
     "packages": [
+        {
+            "name": "asfy-code/artisan",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hungpv-dev/asfy-artisan.git",
+                "reference": "8efba76e661319481c54823c521363c3e4627e7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hungpv-dev/asfy-artisan/zipball/8efba76e661319481c54823c521363c3e4627e7a",
+                "reference": "8efba76e661319481c54823c521363c3e4627e7a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0"
+            },
+            "bin": [
+                "bin/artisan"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AsfyCode\\Artisan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "hungpv",
+                    "email": "phamvanhung.dev@gmail.com"
+                }
+            ],
+            "description": "Đây là 1 tool artisan do AsfyCode phát triển.",
+            "support": {
+                "issues": "https://github.com/hungpv-dev/asfy-artisan/issues",
+                "source": "https://github.com/hungpv-dev/asfy-artisan/tree/v1.0.0"
+            },
+            "time": "2024-08-12T17:41:21+00:00"
+        },
         {
             "name": "carbonphp/carbon-doctrine-types",
             "version": "2.1.0",

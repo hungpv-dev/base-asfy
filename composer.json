@@ -2,6 +2,8 @@
     "name": "asfy-tech/base",
     "description": "BASE ASFY TECH",
     "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "App\\": "app/"

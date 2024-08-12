@@ -1,6 +1,6 @@
 {
-    "name": "asfy/mbt",
-    "description": "Base asfy mbt",
+    "name": "asfy-tech/base",
+    "description": "BASE ASFY TECH",
     "type": "library",
     "autoload": {
         "psr-4": {

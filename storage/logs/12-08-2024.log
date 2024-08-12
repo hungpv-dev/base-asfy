@@ -1,0 +1,394 @@
+[12-Aug-2024 09:06:06 Asia/Ho_Chi_Minh] PHP Warning:  strtolower() expects parameter 1 to be string, array given in D:\laragon\www\base\app\Utils\Route.php on line 60
+[12-Aug-2024 09:06:06 Asia/Ho_Chi_Minh] PHP Warning:  strtolower() expects parameter 1 to be string, array given in D:\laragon\www\base\app\Utils\Route.php on line 60
+[12-Aug-2024 09:06:06 Asia/Ho_Chi_Minh] PHP Warning:  strtolower() expects parameter 1 to be string, array given in D:\laragon\www\base\app\Utils\Route.php on line 60
+[12-Aug-2024 09:06:06 Asia/Ho_Chi_Minh] PHP Warning:  strtolower() expects parameter 1 to be string, array given in D:\laragon\www\base\app\Utils\Route.php on line 60
+[12-Aug-2024 09:06:06 Asia/Ho_Chi_Minh] PHP Warning:  strtolower() expects parameter 1 to be string, array given in D:\laragon\www\base\app\Utils\Route.php on line 60
+[12-Aug-2024 09:06:06 Asia/Ho_Chi_Minh] PHP Warning:  strtolower() expects parameter 1 to be string, array given in D:\laragon\www\base\app\Utils\Route.php on line 60
+[12-Aug-2024 09:06:06 Asia/Ho_Chi_Minh] PHP Warning:  strtolower() expects parameter 1 to be string, array given in D:\laragon\www\base\app\Utils\Route.php on line 60
+[12-Aug-2024 09:06:18 Asia/Ho_Chi_Minh] PHP Warning:  strtolower() expects parameter 1 to be string, array given in D:\laragon\www\base\app\Utils\Route.php on line 60
+[12-Aug-2024 09:06:18 Asia/Ho_Chi_Minh] PHP Warning:  strtolower() expects parameter 1 to be string, array given in D:\laragon\www\base\app\Utils\Route.php on line 60
+[12-Aug-2024 09:06:18 Asia/Ho_Chi_Minh] PHP Warning:  strtolower() expects parameter 1 to be string, array given in D:\laragon\www\base\app\Utils\Route.php on line 60
+[12-Aug-2024 09:06:18 Asia/Ho_Chi_Minh] PHP Warning:  strtolower() expects parameter 1 to be string, array given in D:\laragon\www\base\app\Utils\Route.php on line 60
+[12-Aug-2024 09:06:18 Asia/Ho_Chi_Minh] PHP Warning:  strtolower() expects parameter 1 to be string, array given in D:\laragon\www\base\app\Utils\Route.php on line 60
+[12-Aug-2024 09:06:18 Asia/Ho_Chi_Minh] PHP Warning:  strtolower() expects parameter 1 to be string, array given in D:\laragon\www\base\app\Utils\Route.php on line 60
+[12-Aug-2024 09:06:18 Asia/Ho_Chi_Minh] PHP Warning:  strtolower() expects parameter 1 to be string, array given in D:\laragon\www\base\app\Utils\Route.php on line 60
+[12-Aug-2024 09:07:55 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: action in D:\laragon\www\base\app\Utils\Route.php on line 62
+[12-Aug-2024 09:07:55 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: action in D:\laragon\www\base\app\Utils\Route.php on line 62
+[12-Aug-2024 09:07:55 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: action in D:\laragon\www\base\app\Utils\Route.php on line 62
+[12-Aug-2024 09:07:55 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: action in D:\laragon\www\base\app\Utils\Route.php on line 62
+[12-Aug-2024 09:07:55 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: action in D:\laragon\www\base\app\Utils\Route.php on line 62
+[12-Aug-2024 09:07:55 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: action in D:\laragon\www\base\app\Utils\Route.php on line 62
+[12-Aug-2024 09:07:55 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: action in D:\laragon\www\base\app\Utils\Route.php on line 62
+[12-Aug-2024 09:09:02 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Utils\Route::users() in D:\laragon\www\base\app\Utils\Route.php:66
+Stack trace:
+#0 D:\laragon\www\base\routes\web.php(19): App\Utils\Route::names('users')
+#1 D:\laragon\www\base\app\Utils\Route.php(116): {closure}()
+#2 D:\laragon\www\base\routes\web.php(25): App\Utils\Route::group(Object(Closure))
+#3 D:\laragon\www\base\config\routes.php(5): require_once('D:\\laragon\\www\\...')
+#4 D:\laragon\www\base\index.php(11): require_once('D:\\laragon\\www\\...')
+#5 {main}
+  thrown in D:\laragon\www\base\app\Utils\Route.php on line 66
+[12-Aug-2024 09:09:06 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Utils\Route::users() in D:\laragon\www\base\app\Utils\Route.php:66
+Stack trace:
+#0 D:\laragon\www\base\routes\web.php(19): App\Utils\Route::names('users')
+#1 D:\laragon\www\base\app\Utils\Route.php(115): {closure}()
+#2 D:\laragon\www\base\routes\web.php(25): App\Utils\Route::group(Object(Closure))
+#3 D:\laragon\www\base\config\routes.php(5): require_once('D:\\laragon\\www\\...')
+#4 D:\laragon\www\base\index.php(11): require_once('D:\\laragon\\www\\...')
+#5 {main}
+  thrown in D:\laragon\www\base\app\Utils\Route.php on line 66
+[12-Aug-2024 09:31:26 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ']' in D:\laragon\www\base\app\Utils\Route.php on line 52
+[12-Aug-2024 09:39:02 Asia/Ho_Chi_Minh] PHP Notice:  Array to string conversion in D:\laragon\www\base\app\Utils\Route.php on line 65
+[12-Aug-2024 09:39:02 Asia/Ho_Chi_Minh] PHP Notice:  Array to string conversion in D:\laragon\www\base\app\Utils\Route.php on line 65
+[12-Aug-2024 09:39:02 Asia/Ho_Chi_Minh] PHP Notice:  Array to string conversion in D:\laragon\www\base\app\Utils\Route.php on line 65
+[12-Aug-2024 09:39:02 Asia/Ho_Chi_Minh] PHP Notice:  Array to string conversion in D:\laragon\www\base\app\Utils\Route.php on line 65
+[12-Aug-2024 09:39:02 Asia/Ho_Chi_Minh] PHP Notice:  Array to string conversion in D:\laragon\www\base\app\Utils\Route.php on line 65
+[12-Aug-2024 09:39:02 Asia/Ho_Chi_Minh] PHP Notice:  Array to string conversion in D:\laragon\www\base\app\Utils\Route.php on line 65
+[12-Aug-2024 09:39:02 Asia/Ho_Chi_Minh] PHP Notice:  Array to string conversion in D:\laragon\www\base\app\Utils\Route.php on line 65
+[12-Aug-2024 09:39:02 Asia/Ho_Chi_Minh] PHP Notice:  Array to string conversion in D:\laragon\www\base\app\Utils\Route.php on line 65
+[12-Aug-2024 09:39:02 Asia/Ho_Chi_Minh] PHP Notice:  Array to string conversion in D:\laragon\www\base\app\Utils\Route.php on line 65
+[12-Aug-2024 09:39:02 Asia/Ho_Chi_Minh] PHP Notice:  Array to string conversion in D:\laragon\www\base\app\Utils\Route.php on line 65
+[12-Aug-2024 09:39:02 Asia/Ho_Chi_Minh] PHP Notice:  Array to string conversion in D:\laragon\www\base\app\Utils\Route.php on line 65
+[12-Aug-2024 09:39:02 Asia/Ho_Chi_Minh] PHP Notice:  Array to string conversion in D:\laragon\www\base\app\Utils\Route.php on line 65
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: login in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: logout in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: home in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: users.destroy in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: users.update in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: users.edit in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: users.store in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: users.create in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: users.show in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: users.index in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: hume.destroy in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: hume.update in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: hume.edit in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: hume.store in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: hume.create in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: hume.show in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: hume.index in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: api.users.destroy in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: api.users.update in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: api.users.store in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: api.users.show in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: api.users.index in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:06:02 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 218
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: login in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: logout in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: home in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: users.destroy in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: users.update in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: users.edit in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: users.store in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: users.create in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: users.show in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: users.index in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: hume.destroy in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: hume.update in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: hume.edit in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: hume.store in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: hume.create in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: hume.show in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: hume.index in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: api.users.destroy in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: api.users.update in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: api.users.store in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: api.users.show in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: api.users.index in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:07:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Utils\Route.php on line 219
+[12-Aug-2024 10:09:25 Asia/Ho_Chi_Minh] PHP Warning:  Illegal string offset 'path' in D:\laragon\www\base\app\Helper\helper.php on line 27
+[12-Aug-2024 10:09:25 Asia/Ho_Chi_Minh] PHP Warning:  Illegal string offset 'path' in D:\laragon\www\base\app\Helper\helper.php on line 27
+[12-Aug-2024 10:09:50 Asia/Ho_Chi_Minh] PHP Warning:  Illegal string offset 'path' in D:\laragon\www\base\app\Helper\helper.php on line 27
+[12-Aug-2024 10:09:51 Asia/Ho_Chi_Minh] PHP Warning:  Illegal string offset 'path' in D:\laragon\www\base\app\Helper\helper.php on line 27
+[12-Aug-2024 10:09:52 Asia/Ho_Chi_Minh] PHP Warning:  Illegal string offset 'path' in D:\laragon\www\base\app\Helper\helper.php on line 27
+[12-Aug-2024 10:20:47 Asia/Ho_Chi_Minh] PHP Warning:  hash_equals(): Expected user_string to be a string, bool given in D:\laragon\www\base\app\Traits\MiddleBefore.php on line 21
+[12-Aug-2024 10:21:04 Asia/Ho_Chi_Minh] PHP Warning:  hash_equals(): Expected user_string to be a string, bool given in D:\laragon\www\base\app\Traits\MiddleBefore.php on line 21
+[12-Aug-2024 10:21:10 Asia/Ho_Chi_Minh] PHP Warning:  hash_equals(): Expected user_string to be a string, bool given in D:\laragon\www\base\app\Traits\MiddleBefore.php on line 21
+[12-Aug-2024 10:21:15 Asia/Ho_Chi_Minh] PHP Warning:  hash_equals(): Expected user_string to be a string, bool given in D:\laragon\www\base\app\Traits\MiddleBefore.php on line 21
+[12-Aug-2024 10:22:01 Asia/Ho_Chi_Minh] PHP Warning:  hash_equals(): Expected user_string to be a string, bool given in D:\laragon\www\base\app\Traits\MiddleBefore.php on line 21
+[12-Aug-2024 10:22:12 Asia/Ho_Chi_Minh] PHP Warning:  hash_equals(): Expected user_string to be a string, bool given in D:\laragon\www\base\app\Traits\MiddleBefore.php on line 21
+[12-Aug-2024 10:23:22 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index:  in D:\laragon\www\base\app\Middleware\HandleAfter.php on line 14
+[12-Aug-2024 10:23:24 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index:  in D:\laragon\www\base\app\Middleware\HandleAfter.php on line 14
+[12-Aug-2024 10:24:11 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'dd' (T_STRING), expecting ';' in D:\laragon\www\base\app\Middleware\HandleAfter.php on line 15
+[12-Aug-2024 10:24:23 Asia/Ho_Chi_Minh] PHP Warning:  hash_equals(): Expected user_string to be a string, bool given in D:\laragon\www\base\app\Traits\MiddleBefore.php on line 21
+[12-Aug-2024 10:24:25 Asia/Ho_Chi_Minh] PHP Warning:  hash_equals(): Expected user_string to be a string, bool given in D:\laragon\www\base\app\Traits\MiddleBefore.php on line 21
+[12-Aug-2024 10:24:53 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 100
+[12-Aug-2024 10:24:53 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 101
+[12-Aug-2024 10:26:38 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 101
+[12-Aug-2024 10:26:38 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 102
+[12-Aug-2024 10:41:32 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 101
+[12-Aug-2024 10:41:32 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 102
+[12-Aug-2024 10:41:33 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 101
+[12-Aug-2024 10:41:33 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 102
+[12-Aug-2024 10:41:52 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 101
+[12-Aug-2024 10:41:52 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 102
+[12-Aug-2024 10:42:30 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 101
+[12-Aug-2024 10:42:30 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 102
+[12-Aug-2024 10:42:33 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 101
+[12-Aug-2024 10:42:33 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 102
+[12-Aug-2024 10:42:52 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 101
+[12-Aug-2024 10:42:52 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 102
+[12-Aug-2024 10:43:19 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 101
+[12-Aug-2024 10:43:33 Asia/Ho_Chi_Minh] PHP Notice:  Only variables should be passed by reference in D:\laragon\www\base\app\Helper\helper.php on line 101
+[12-Aug-2024 10:45:09 Asia/Ho_Chi_Minh] PHP Notice:  Undefined offset: 18 in D:\laragon\www\base\app\Helper\helper.php on line 106
+[12-Aug-2024 10:45:24 Asia/Ho_Chi_Minh] PHP Notice:  Undefined offset: 18 in D:\laragon\www\base\app\Helper\helper.php on line 107
+[12-Aug-2024 11:20:56 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Helper\helper.php on line 20
+[12-Aug-2024 11:21:37 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Helper\helper.php on line 17
+[12-Aug-2024 11:22:27 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in D:\laragon\www\base\app\Helper\helper.php on line 17
+[12-Aug-2024 11:40:34 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function mcfn0dpkh2cm1882h89ne7qstt() in D:\laragon\www\base\app\Traits\MiddleBefore.php:25
+Stack trace:
+#0 D:\laragon\www\base\app\Middleware\HandleBefore.php(14): App\Middleware\HandleBefore->csrfToken(Object(App\Utils\Request))
+#1 D:\laragon\www\base\app\Utils\Route.php(210): App\Middleware\HandleBefore->handle(Object(App\Utils\Request))
+#2 D:\laragon\www\base\app\Utils\Route.php(269): App\Utils\Route::handleGlobalMiddleware(Array)
+#3 D:\laragon\www\base\config\routes.php(11): App\Utils\Route::run()
+#4 D:\laragon\www\base\index.php(11): require_once('D:\\laragon\\www\\...')
+#5 {main}
+  thrown in D:\laragon\www\base\app\Traits\MiddleBefore.php on line 25
+[12-Aug-2024 11:47:54 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: password in D:\laragon\www\base\app\Traits\Validate.php on line 25
+[12-Aug-2024 11:47:54 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: password in D:\laragon\www\base\app\Traits\Validate.php on line 33
+[12-Aug-2024 12:24:37 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: password in D:\laragon\www\base\app\Traits\Validate.php on line 25
+[12-Aug-2024 12:24:37 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: password in D:\laragon\www\base\app\Traits\Validate.php on line 33
+[12-Aug-2024 12:37:00 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: password in D:\laragon\www\base\app\Traits\Validate.php on line 25
+[12-Aug-2024 12:37:00 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: password in D:\laragon\www\base\app\Traits\Validate.php on line 33
+[12-Aug-2024 13:31:50 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: password in D:\laragon\www\base\app\Traits\Validate.php on line 25
+[12-Aug-2024 13:31:50 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: password in D:\laragon\www\base\app\Traits\Validate.php on line 33
+[12-Aug-2024 13:32:50 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: password in D:\laragon\www\base\app\Traits\Validate.php on line 25
+[12-Aug-2024 13:32:50 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: password in D:\laragon\www\base\app\Traits\Validate.php on line 33
+[12-Aug-2024 13:43:33 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: csrf_token in D:\laragon\www\base\storage\framework\views\auth.login_c7d9fe2a394f45c2f6e51a488c039ddc976f0142.bladec on line 62
+[12-Aug-2024 13:43:51 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: csrf_token in D:\laragon\www\base\storage\framework\views\auth.login_c7d9fe2a394f45c2f6e51a488c039ddc976f0142.bladec on line 62
+[12-Aug-2024 13:44:09 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: csrf_token in D:\laragon\www\base\storage\framework\views\auth.login_c7d9fe2a394f45c2f6e51a488c039ddc976f0142.bladec on line 62
+[12-Aug-2024 13:44:10 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: csrf_token in D:\laragon\www\base\storage\framework\views\auth.login_c7d9fe2a394f45c2f6e51a488c039ddc976f0142.bladec on line 62
+[12-Aug-2024 13:50:52 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: csrf_token in D:\laragon\www\base\storage\framework\views\auth.login_c7d9fe2a394f45c2f6e51a488c039ddc976f0142.bladec on line 62
+[12-Aug-2024 13:54:12 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to eftec\bladeone\BladeOne::directive() must be callable, string given, called in D:\laragon\www\base\app\Commons\Controller.php on line 14 and defined in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php:572
+Stack trace:
+#0 D:\laragon\www\base\app\Commons\Controller.php(14): eftec\bladeone\BladeOne->directive('csrf', '<input type='hi...')
+#1 D:\laragon\www\base\app\Controllers\LoginController.php(25): App\Commons\Controller->view('auth.login', Array)
+#2 [internal function]: App\Controllers\LoginController->showFormLogin()
+#3 D:\laragon\www\base\app\Utils\Route.php(306): call_user_func_array(Array, Array)
+#4 D:\laragon\www\base\config\routes.php(11): App\Utils\Route::run()
+#5 D:\laragon\www\base\index.php(11): require_once('D:\\laragon\\www\\...')
+#6 {main}
+  thrown in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php on line 572
+[12-Aug-2024 13:54:42 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting ')' in D:\laragon\www\base\app\Commons\Controller.php on line 14
+[12-Aug-2024 13:55:20 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to eftec\bladeone\BladeOne::directive() must be callable, string given, called in D:\laragon\www\base\app\Commons\Controller.php on line 15 and defined in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php:572
+Stack trace:
+#0 D:\laragon\www\base\app\Commons\Controller.php(15): eftec\bladeone\BladeOne->directive('csrf', '<input type='hi...')
+#1 D:\laragon\www\base\app\Controllers\LoginController.php(25): App\Commons\Controller->view('auth.login', Array)
+#2 [internal function]: App\Controllers\LoginController->showFormLogin()
+#3 D:\laragon\www\base\app\Utils\Route.php(306): call_user_func_array(Array, Array)
+#4 D:\laragon\www\base\config\routes.php(11): App\Utils\Route::run()
+#5 D:\laragon\www\base\index.php(11): require_once('D:\\laragon\\www\\...')
+#6 {main}
+  thrown in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php on line 572
+[12-Aug-2024 14:07:43 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class 'Blade' not found in D:\laragon\www\base\app\Helper\helper.php:6
+Stack trace:
+#0 D:\laragon\www\base\app\Controllers\LoginController.php(25): view('auth.login', Array)
+#1 [internal function]: App\Controllers\LoginController->showFormLogin()
+#2 D:\laragon\www\base\app\Utils\Route.php(306): call_user_func_array(Array, Array)
+#3 D:\laragon\www\base\config\routes.php(11): App\Utils\Route::run()
+#4 D:\laragon\www\base\index.php(11): require_once('D:\\laragon\\www\\...')
+#5 {main}
+  thrown in D:\laragon\www\base\app\Helper\helper.php on line 6
+[12-Aug-2024 14:07:58 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class 'Blade' not found in D:\laragon\www\base\app\Helper\helper.php:6
+Stack trace:
+#0 D:\laragon\www\base\app\Controllers\LoginController.php(25): view('auth.login', Array)
+#1 [internal function]: App\Controllers\LoginController->showFormLogin()
+#2 D:\laragon\www\base\app\Utils\Route.php(306): call_user_func_array(Array, Array)
+#3 D:\laragon\www\base\config\routes.php(11): App\Utils\Route::run()
+#4 D:\laragon\www\base\index.php(11): require_once('D:\\laragon\\www\\...')
+#5 {main}
+  thrown in D:\laragon\www\base\app\Helper\helper.php on line 6
+[12-Aug-2024 14:08:07 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught RuntimeException: Template not found: auth.login in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php:1390
+Stack trace:
+#0 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1351): eftec\bladeone\BladeOne->getCompiledFile('auth.login')
+#1 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1240): eftec\bladeone\BladeOne->compile('auth.login', false)
+#2 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(2134): eftec\bladeone\BladeOne->runInternal('auth.login', Array, false, false)
+#3 D:\laragon\www\base\config\blade.php(24): eftec\bladeone\BladeOne->run('auth.login', Array)
+#4 D:\laragon\www\base\app\Helper\helper.php(7): Blade->render('auth.login', Array)
+#5 D:\laragon\www\base\app\Controllers\LoginController.php(25): view('auth.login', Array)
+#6 [internal function]: App\Controllers\LoginController->showFormLogin()
+#7 D:\laragon\www\base\app\Utils\Route.php(306): call_user_func_array(Array, Array)
+#8 D:\laragon\www\base\config\routes.php(11): App\Utils\Route::run()
+#9  in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php on line 1390
+[12-Aug-2024 14:08:12 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught RuntimeException: Template not found: auth.login in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php:1390
+Stack trace:
+#0 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1351): eftec\bladeone\BladeOne->getCompiledFile('auth.login')
+#1 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1240): eftec\bladeone\BladeOne->compile('auth.login', false)
+#2 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(2134): eftec\bladeone\BladeOne->runInternal('auth.login', Array, false, false)
+#3 D:\laragon\www\base\config\blade.php(24): eftec\bladeone\BladeOne->run('auth.login', Array)
+#4 D:\laragon\www\base\app\Helper\helper.php(7): Blade->render('auth.login', Array)
+#5 D:\laragon\www\base\app\Controllers\LoginController.php(25): view('auth.login', Array)
+#6 [internal function]: App\Controllers\LoginController->showFormLogin()
+#7 D:\laragon\www\base\app\Utils\Route.php(306): call_user_func_array(Array, Array)
+#8 D:\laragon\www\base\config\routes.php(11): App\Utils\Route::run()
+#9  in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php on line 1390
+[12-Aug-2024 14:08:14 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught RuntimeException: Template not found: auth.login in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php:1390
+Stack trace:
+#0 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1351): eftec\bladeone\BladeOne->getCompiledFile('auth.login')
+#1 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1240): eftec\bladeone\BladeOne->compile('auth.login', false)
+#2 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(2134): eftec\bladeone\BladeOne->runInternal('auth.login', Array, false, false)
+#3 D:\laragon\www\base\config\blade.php(24): eftec\bladeone\BladeOne->run('auth.login', Array)
+#4 D:\laragon\www\base\app\Helper\helper.php(7): Blade->render('auth.login', Array)
+#5 D:\laragon\www\base\app\Controllers\LoginController.php(25): view('auth.login', Array)
+#6 [internal function]: App\Controllers\LoginController->showFormLogin()
+#7 D:\laragon\www\base\app\Utils\Route.php(306): call_user_func_array(Array, Array)
+#8 D:\laragon\www\base\config\routes.php(11): App\Utils\Route::run()
+#9  in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php on line 1390
+[12-Aug-2024 14:08:17 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught RuntimeException: Template not found: auth.login in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php:1390
+Stack trace:
+#0 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1351): eftec\bladeone\BladeOne->getCompiledFile('auth.login')
+#1 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1240): eftec\bladeone\BladeOne->compile('auth.login', false)
+#2 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(2134): eftec\bladeone\BladeOne->runInternal('auth.login', Array, false, false)
+#3 D:\laragon\www\base\config\blade.php(24): eftec\bladeone\BladeOne->run('auth.login', Array)
+#4 D:\laragon\www\base\app\Helper\helper.php(7): Blade->render('auth.login', Array)
+#5 D:\laragon\www\base\app\Controllers\LoginController.php(25): view('auth.login', Array)
+#6 [internal function]: App\Controllers\LoginController->showFormLogin()
+#7 D:\laragon\www\base\app\Utils\Route.php(306): call_user_func_array(Array, Array)
+#8 D:\laragon\www\base\config\routes.php(11): App\Utils\Route::run()
+#9  in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php on line 1390
+[12-Aug-2024 14:08:20 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class 'Blade' not found in D:\laragon\www\base\app\Helper\helper.php:6
+Stack trace:
+#0 D:\laragon\www\base\app\Controllers\LoginController.php(25): view('auth.login', Array)
+#1 [internal function]: App\Controllers\LoginController->showFormLogin()
+#2 D:\laragon\www\base\app\Utils\Route.php(306): call_user_func_array(Array, Array)
+#3 D:\laragon\www\base\config\routes.php(11): App\Utils\Route::run()
+#4 D:\laragon\www\base\index.php(11): require_once('D:\\laragon\\www\\...')
+#5 {main}
+  thrown in D:\laragon\www\base\app\Helper\helper.php on line 6
+[12-Aug-2024 14:09:28 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught RuntimeException: Template not found: auth.login in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php:1390
+Stack trace:
+#0 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1351): eftec\bladeone\BladeOne->getCompiledFile('auth.login')
+#1 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1240): eftec\bladeone\BladeOne->compile('auth.login', false)
+#2 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(2134): eftec\bladeone\BladeOne->runInternal('auth.login', Array, false, false)
+#3 D:\laragon\www\base\config\blade.php(24): eftec\bladeone\BladeOne->run('auth.login', Array)
+#4 D:\laragon\www\base\app\Helper\helper.php(7): Blade->render('auth.login', Array)
+#5 D:\laragon\www\base\app\Controllers\LoginController.php(25): view('auth.login', Array)
+#6 [internal function]: App\Controllers\LoginController->showFormLogin()
+#7 D:\laragon\www\base\app\Utils\Route.php(306): call_user_func_array(Array, Array)
+#8 D:\laragon\www\base\config\routes.php(11): App\Utils\Route::run()
+#9  in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php on line 1390
+[12-Aug-2024 14:09:28 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught RuntimeException: Template not found: auth.login in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php:1390
+Stack trace:
+#0 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1351): eftec\bladeone\BladeOne->getCompiledFile('auth.login')
+#1 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1240): eftec\bladeone\BladeOne->compile('auth.login', false)
+#2 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(2134): eftec\bladeone\BladeOne->runInternal('auth.login', Array, false, false)
+#3 D:\laragon\www\base\config\blade.php(24): eftec\bladeone\BladeOne->run('auth.login', Array)
+#4 D:\laragon\www\base\app\Helper\helper.php(7): Blade->render('auth.login', Array)
+#5 D:\laragon\www\base\app\Controllers\LoginController.php(25): view('auth.login', Array)
+#6 [internal function]: App\Controllers\LoginController->showFormLogin()
+#7 D:\laragon\www\base\app\Utils\Route.php(306): call_user_func_array(Array, Array)
+#8 D:\laragon\www\base\config\routes.php(11): App\Utils\Route::run()
+#9  in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php on line 1390
+[12-Aug-2024 14:09:29 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught RuntimeException: Template not found: auth.login in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php:1390
+Stack trace:
+#0 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1351): eftec\bladeone\BladeOne->getCompiledFile('auth.login')
+#1 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1240): eftec\bladeone\BladeOne->compile('auth.login', false)
+#2 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(2134): eftec\bladeone\BladeOne->runInternal('auth.login', Array, false, false)
+#3 D:\laragon\www\base\config\blade.php(24): eftec\bladeone\BladeOne->run('auth.login', Array)
+#4 D:\laragon\www\base\app\Helper\helper.php(7): Blade->render('auth.login', Array)
+#5 D:\laragon\www\base\app\Controllers\LoginController.php(25): view('auth.login', Array)
+#6 [internal function]: App\Controllers\LoginController->showFormLogin()
+#7 D:\laragon\www\base\app\Utils\Route.php(306): call_user_func_array(Array, Array)
+#8 D:\laragon\www\base\config\routes.php(11): App\Utils\Route::run()
+#9  in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php on line 1390
+[12-Aug-2024 14:09:29 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught RuntimeException: Template not found: auth.login in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php:1390
+Stack trace:
+#0 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1351): eftec\bladeone\BladeOne->getCompiledFile('auth.login')
+#1 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(1240): eftec\bladeone\BladeOne->compile('auth.login', false)
+#2 D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php(2134): eftec\bladeone\BladeOne->runInternal('auth.login', Array, false, false)
+#3 D:\laragon\www\base\config\blade.php(24): eftec\bladeone\BladeOne->run('auth.login', Array)
+#4 D:\laragon\www\base\app\Helper\helper.php(7): Blade->render('auth.login', Array)
+#5 D:\laragon\www\base\app\Controllers\LoginController.php(25): view('auth.login', Array)
+#6 [internal function]: App\Controllers\LoginController->showFormLogin()
+#7 D:\laragon\www\base\app\Utils\Route.php(306): call_user_func_array(Array, Array)
+#8 D:\laragon\www\base\config\routes.php(11): App\Utils\Route::run()
+#9  in D:\laragon\www\base\vendor\eftec\bladeone\lib\BladeOne.php on line 1390
+[12-Aug-2024 14:43:26 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 79
+[12-Aug-2024 14:43:29 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 79
+[12-Aug-2024 14:43:56 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 76
+[12-Aug-2024 14:43:58 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 76
+[12-Aug-2024 14:45:00 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 76
+[12-Aug-2024 14:45:01 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 76
+[12-Aug-2024 14:45:01 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 76
+[12-Aug-2024 14:45:01 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 76
+[12-Aug-2024 14:45:11 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:45:12 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:45:12 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:45:12 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:45:45 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:36 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:37 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:37 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:48 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:49 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:49 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:49 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:49 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:50 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:50 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:57 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:57 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:57 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:58 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:46:58 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:47:14 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:47:14 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:47:14 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:47:15 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 75
+[12-Aug-2024 14:48:14 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 72
+[12-Aug-2024 14:48:15 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 72
+[12-Aug-2024 14:48:15 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 72
+[12-Aug-2024 14:48:15 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 72
+[12-Aug-2024 14:48:15 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 72
+[12-Aug-2024 14:48:16 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 72
+[12-Aug-2024 14:48:16 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 72
+[12-Aug-2024 14:48:16 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 72
+[12-Aug-2024 14:48:29 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 72
+[12-Aug-2024 14:48:47 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 72
+[12-Aug-2024 14:49:50 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 71
+[12-Aug-2024 14:51:28 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected '?>' in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 70
+[12-Aug-2024 14:51:34 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected ':' in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 70
+[12-Aug-2024 14:51:47 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected ':' in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 70
+[12-Aug-2024 14:52:05 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected '{' in D:\laragon\www\base\storage\framework\views\auth.login_e43def664676aa216cfb7cd08e6f015001ac6e80.bladec on line 70

@@ -1,0 +1,34 @@
+<?php
+require_once './vendor/artisan/src/Make.php';
+
+use Artisan\Make;
+
+if (count($argv) <= 1) {
+    include './vendor/artisan/help.php';
+    die();
+}
+
+$data = null;
+$config = null;
+$attributes = $argv[1];
+if (isset($argv[2])) {
+    $data = $argv[2];
+}
+if (isset($argv[3])) {
+    $config = $argv[3];
+}
+
+$attributes = explode(':', $attributes);
+
+$key = $attributes[0];
+$type = $attributes[1] ?? false;
+
+switch ($key) {
+    case 'make': {
+            if ($type) {
+                $make = new Make($data, $config);
+                $make->handle($type);
+            }
+            break;
+        }
+}

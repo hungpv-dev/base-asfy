@@ -1,7 +1,7 @@
 {
     "name": "asfy-tech/base",
     "description": "BASE ASFY TECH",
-    "type": "library",
+    "type": "framework",
     "autoload": {
         "psr-4": {
             "App\\": "app/"

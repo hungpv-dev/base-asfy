@@ -37,5 +37,11 @@
             "Oauth2"
         ]
     },
-    "license": "proprietary"
+    "license": "proprietary",
+    "repositories": {
+        "asfy-tech/base": {
+            "type": "vcs",
+            "url": "https://github.com/hungpv-dev/base-asfy.git"
+        }
+    }
 }

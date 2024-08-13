@@ -180,6 +180,18 @@ if (!function_exists('asset')) {
         return $_ENV['BASE_URL'] . '/public/assets/' . $path;
     }
 }
+if (!function_exists('js')) {
+    function js($path)
+    {
+        return $_ENV['BASE_URL'] . '/resources/js/' . $path;
+    }
+}
+if (!function_exists('css')) {
+    function css($path)
+    {
+        return $_ENV['BASE_URL'] . '/resources/css/' . $path;
+    }
+}
 if (!function_exists('getRootUrl')) {
     function getRootUrl()
     {
@@ -216,9 +228,8 @@ if (!function_exists('logError')) {
         if (!empty($traceInfo['context'])) {
             $errorMessage .= "\nContext Variables: " . implode(', ', $traceInfo['context']);
         }
-
-        $logFilePath = $_ENV['BASE_URL'] . '/storage/logs/error_log_' . date('d-m-Y') . '.log';
-        error_log($errorMessage, 3, $logFilePath);
+        $errorMessage = $errorMessage."\n ". str_repeat('★', 35) . " ERROR LOG " . str_repeat('★', 35) . "\n";
+        error_log($errorMessage);
     }
 
     function getBacktraceInfo()

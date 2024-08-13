@@ -4,7 +4,6 @@ use App\Utils\Route;
 use App\Controllers\{
     HomeController,
     LoginController,
-    UserController,
 };
 
 Route::get('/login',[LoginController::class,'showFormLogin']);
@@ -15,8 +14,7 @@ Route::get('/logout',[LoginController::class,'logout'])->name('logout');
 Route::middeware('auth')->group(function(){
 
     Route::get('/',[HomeController::class,'index'])->name('home');
-    
-    Route::resource('/users', UserController::class)->names('users');
+
 });
 
 

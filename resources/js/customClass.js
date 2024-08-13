@@ -443,7 +443,6 @@ class RequestServer {
     constructor(route) {
         this.index = 1;
         this.route = route;
-        this.showAll = false;
         this.response = null;
         this.colspan = 5;
         this.tbody = "data_table_body";
@@ -463,23 +462,14 @@ class RequestServer {
         } else {
             params = this.params;
         }
-        if (this.showAll) {
-            params.show_all = true;
-        }
-
         try {
-            let fetch = await axios
-                .get(links, { params })
-                .then((response) => response.data);
-            if (fetch.status === 200) {
-                this.index = fetch.data.from;
-                this.response = fetch.data;
-                this.setParams(fetch.data);
+            let response = await axios.get(links, { params }).then(res => res);
+            if (response.status === 200) {
+                this.index = response.data.from;
+                this.response = response.data;
+                this.setParams(response.data);
                 this.showData();
                 this.init = true;
-            } else {
-                console.log("Lỗi xảy ra: ");
-                console.log(fetch);
             }
         } catch (error) {
             console.log(error);
@@ -507,17 +497,15 @@ class RequestServer {
     }
 
     setParams(data) {
-        let url = new URL(data.currentUrl);
+        let url = new URL(data.url + data.params);
         this.params = this.getParams(url.search);
-        delete this.params.page;
-        const newUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}${data.params + data.currentPage}`;
+        const newUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}${data.params}`;
         window.history.pushState({ path: newUrl }, '', newUrl);
     }
 
     showData() {
         let data = this.response.data;
         this.content = this.insert(data);
-
         let contentLoading = "";
         if (data.length <= 0) {
             contentLoading = `<tr><td colspan="${this.colspan}" class="text-center fw-bold fs-7 text-danger">Chưa có dữ liệu</td></tr>`;
@@ -534,27 +522,31 @@ class RequestServer {
         if (this.totalContent) {
             this.totalContent.textContent = data.total;
         }
+        let pathHere = new URL(data.url + data.params);
+        pathHere.searchParams.get('page');
+        let pathALl = pathHere.toString();
+        pathHere.searchParams.delete('show_all');
+        let pathNotALl = pathHere.toString();
         let html = `<div class="row align-items-center justify-content-between py-2 pe-0 fs-9">
             <div class="col-auto d-flex">
                 <p class="mb-0 d-none d-sm-block me-3 fw-semibold text-body">
                 ${data.from} đến ${data.to}<span class="text-body-tertiary"> Trong </span> ${data.total}
-                </p>`;
-        if (!this.showAll) {
-            html += `
-                
+                </p>
                 <a class="btn-link" href="javascript:" title="Tất cả" ${data.all ? "hidden" : ""
-                } data-pagelinks="${data.url + data.params + 1 + "&show_all=true"
-                }">
-                    Tất cả<span class="fas fa-angle-right ms-1"></span>
-                </a>
+            } data-pagelinks="${pathALl + "&show_all=true"
+            }">Tất cả<span class="fas fa-angle-right ms-1"></span></a>
                 <a class="btn-link" href="javascript:" title="Thu gọn" ${data.all ? "" : "hidden"
-                } data-pagelinks="${data.url + data.params + 1}">
+            } data-pagelinks="${pathNotALl}">
                     Thu gọn<span class="fas fa-angle-left ms-1"></span>
                 </a>
             </div>
                 `;
-        }
         if (!data.all) {
+            let urlNP = new URL(data.url + data.params);
+            urlNP.searchParams.set('page', parseInt(data.currentPage) - 1);
+            let prePage = urlNP.toString();
+            urlNP.searchParams.set('page', parseInt(data.currentPage) + 1);
+            let nextPage = urlNP.toString();
             html += `
                 <nav class="col-auto d-flex">
                     <ul class="mb-0 pagination justify-content-end">
@@ -562,8 +554,7 @@ class RequestServer {
                 }">
                             <a class="page-link ${data.currentPage <= 1 ? "disabled" : ""
                 }" ${data.currentPage <= 1 ? 'disabled=""' : ""
-                } href="javascript:" title="Trang trước" data-pagelinks="${data.url + data.params + (parseInt(data.currentPage) - 1)
-                }">
+                } href="javascript:" title="Trang trước" data-pagelinks="${prePage.toString()}">
                                 <span class="fas fa-chevron-left"></span>
                             </a>
                         </li>`;
@@ -571,20 +562,19 @@ class RequestServer {
             html += `
                 <li class="page-item ${data.currentPage >= data.totalPages ? "disabled" : ""
                 }">
-                    <a class= "page-link ${data.currentPage >= data.totalPages ? "disabled" : ""
-                }"  href="javascript:" title="Trang sau"  data-pagelinks="${data.url + data.params + (parseInt(data.currentPage) + 1)
+                            <a class= "page-link ${data.currentPage >= data.totalPages ? "disabled" : ""
+                }"  href="javascript:" title="Trang sau"  data-pagelinks="${nextPage.toString()
                 }" >
-                    <span class= "fas fa-chevron-right"></span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        `;
+                            <span class= "fas fa-chevron-right"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                `;
         }
-
         html += `
-    </div>
-    `;
+            </div>
+            `;
         if (element) {
             element.innerHTML = html;
         }
@@ -603,8 +593,9 @@ class RequestServer {
                     if (index == +data.currentPage) {
                         html += `<li class="page-item active"><a class="page-link" title="Trang ${index}" href="javascript:" type="button">${index}</a></li>`;
                     } else {
-                        html += `<li class="page-item"><a class="page-link" type="button" title="Trang ${index}" href="javascript:" data-pagelinks="${data.url + data.params + index
-                            }">${index}</a></li>`;
+                        let pathUrl = new URL(data.url + data.params);
+                        pathUrl.searchParams.set('page', index);
+                        html += `<li class="page-item"><a class="page-link" type="button" title="Trang ${index}" href="javascript:" data-pagelinks="${pathUrl.toString()}">${index}</a></li>`;
                     }
                 }
             }
@@ -620,6 +611,7 @@ class RequestServer {
                 link.addEventListener("click", async () => {
                     btnLoading(link, true, link.textContent);
                     let pageLinks = link.getAttribute("data-pageLinks");
+                    this.params = {};
                     await this.get(pageLinks);
                     btnLoading(link, false, link.textContent);
                 });
@@ -743,7 +735,6 @@ class Repository {
     }
 
     static showAreas(userId, choices) {
-        console.log(userId);
         let choiceData = [
             {
                 value: "",

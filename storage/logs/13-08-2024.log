@@ -1,9 +1,11 @@
-[13-Aug-2024 08:30:30 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "Google_Client" not found in D:\laragon\www\asfy-base\app\Traits\GoogleClient.php:24
+[13-Aug-2024 11:56:47 Asia/Ho_Chi_Minh] PHP Notice:  A non well formed numeric value encountered in D:\laragon\www\asfy-base\app\Utils\BaseClass.php on line 621
+[13-Aug-2024 12:23:51 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: data in D:\laragon\www\asfy-base\app\Utils\BaseClass.php on line 645
+[13-Aug-2024 12:23:51 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in D:\laragon\www\asfy-base\app\Utils\BaseClass.php:645
 Stack trace:
-#0 D:\laragon\www\asfy-base\app\Controllers\LoginController.php(23): App\Controllers\LoginController->clientGoogle()
-#1 [internal function]: App\Controllers\LoginController->showFormLogin()
+#0 D:\laragon\www\asfy-base\app\Controllers\UserController.php(12): Paginator->build()
+#1 [internal function]: App\Controllers\UserController->index(Object(App\Utils\Request))
 #2 D:\laragon\www\asfy-base\app\Utils\Route.php(306): call_user_func_array(Array, Array)
 #3 D:\laragon\www\asfy-base\config\routes.php(11): App\Utils\Route::run()
 #4 D:\laragon\www\asfy-base\index.php(11): require_once('D:\\laragon\\www\\...')
 #5 {main}
-  thrown in D:\laragon\www\asfy-base\app\Traits\GoogleClient.php on line 24
+  thrown in D:\laragon\www\asfy-base\app\Utils\BaseClass.php on line 645

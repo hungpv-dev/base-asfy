@@ -2,6 +2,7 @@
 
 namespace App\Utils;
 
+use Paginator;
 use Session;
 
 class Request
@@ -12,7 +13,8 @@ class Request
         return htmlspecialchars($all[$key] ?? $default);
     }
 
-    public function user(){
+    public function user()
+    {
         return $_SESSION['authentication'] ?? NULL;
     }
 
@@ -62,12 +64,12 @@ class Request
     {
         return $_SERVER['REQUEST_METHOD'];
     }
-    public function fullUrl()
+    public function fullUrl($params = true)
     {
         $isHttps = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on';
         $scheme = $isHttps ? 'https' : 'http';
         $url = $scheme . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-        return strtok($url, '?');
+        return $params ? $url : strtok($url, '?');
     }
     public function uri()
     {
@@ -90,15 +92,18 @@ class Request
         return $_SERVER['HTTP_CLIENT_IP'] ?? $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? '';
     }
 
-    public function back(){
+    public function back()
+    {
         return back();
     }
-    public function validate($rules, $message = [], $attribute = []){
-        return new Validator($this->all(),$rules,$message,$attribute);
+    public function validate($rules, $message = [], $attribute = [])
+    {
+        return new Validator($this->all(), $rules, $message, $attribute);
     }
 
-    public function response($data, $status = 200, $headers = [], $type = 'application/json') {
-        
+    public function response($data, $status = 200, $headers = [], $type = 'application/json')
+    {
+
         http_response_code($status);
 
         foreach ($headers as $key => $value) {
@@ -114,7 +119,10 @@ class Request
         } else if ($type === 'text/plain') {
             echo $data;
         }
-
         exit;
+    }
+
+    public function paginate($data,$limit = 50){
+        return new Paginator($data,$limit);
     }
 }

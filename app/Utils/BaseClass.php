@@ -600,3 +600,74 @@ if (!class_exists('Session')) {
     }
     
 }
+
+
+if (!class_exists('Paginator')) {
+    class Paginator
+    {
+        private $data;
+        private $limit;
+        private $attribute = [];
+        public function __construct($data, $limit = 50)
+        {
+            $this->data = $data;
+            $this->limit = $limit;
+        }
+
+        public function build()
+        {
+            $request = new \App\Utils\Request(); 
+            $page = $request->input('page', 1);
+            $offset = ($page - 1) * $this->limit;
+            $count = $this->data->count();
+            $to = $offset + $this->limit;
+            if ($to > $count) {
+                $to = $count;
+            }
+            $from = $offset + 1;
+            if($request->has('show_all')){
+                $data = $this->data;
+                $to = $count;
+                $from = 1;
+            }else{
+                $data = $this->data->limit($this->limit)->offset($offset);
+            }
+
+            $query = $request->query();
+            $query['page'] = $page;
+
+            $response = [
+                'from' => $from,
+                'to' => $to,
+                'total' => $count,
+                'totalPages' => ceil($count / $this->limit),
+                'currentPage' => $page,
+                'url' => $request->fullUrl(false),
+                'currentUrl' => $request->fullUrl(),
+                'params' => '?' . http_build_query($query),
+                'limit' => $this->limit,
+                'all' => $request->has('show_all'),
+                'data' => $data->get()
+            ];
+
+            if(!empty($this->attribute)){
+                foreach($this->attribute as $key => $value){
+                    if(!isset($response[$key])){
+                        $response[$key] = $value;
+                    }
+                }
+            }
+
+            return $response;
+        }
+
+        public function setAttribute($key,$value = null){
+            if(is_array($key)){
+                $this->attribute = array_merge($this->attribute,$key);
+            }else{
+                $this->attribute[$key] = $value;
+            }
+            return $this;
+        }
+    }
+}

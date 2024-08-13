@@ -1,0 +1,105 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('title'); ?>
+ Danh sách user
+<?php $this->stopSection(); ?>
+<?php $this->startSection('content'); ?>
+ <div class="content">
+ <nav class="mb-2" aria-label="breadcrumb">
+ <ol class="breadcrumb mb-0">
+ <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+ <li class="breadcrumb-item">Vật tư</li>
+ <li class="breadcrumb-item">Danh mục vật tư</li>
+ </ol>
+ </nav>
+ <h2 class="text-bold text-body-emphasis mb-5">Danh mục vật tư</h2>
+ <div>
+ <!-- Search -->
+ <div id="searchModal" class="d-flex justify-content-between align-items-center">
+ <form>
+ <div class="d-flex align-items-center gap-3 flex-wrap">
+ <div>
+ <input type="text" placeholder="Số dự án" name="so_du_an"
+ class="form-control data-value empty">
+ </div>
+ <div class="d-flex justify-content-start">
+ <button class="btn btn-sm btn-phoenix-warning me-2" onclick="removeFilter()" type="button">Xoá
+ lọc</button>
+ <button type="submit" class="btn btn-sm btn-phoenix-info btn-filter" title="Lọc">
+ <span class="fas fa-filter text-info fs-9 me-2"></span>Lọc
+ </button>
+ </div>
+ </div>
+ </form>
+ </div>
+
+
+ <!-- Table -->
+ <div class="mx-n4 mx-lg-n6 px-4 px-lg-6 mb-9 bg-body-emphasis border-y mt-2 position-relative top-1"
+ id="list_users_container">
+ <div class="table-responsive scrollbar ms-n1 ps-1">
+ <table class="table table-hover table-sm fs-9 mb-0">
+ <thead>
+ <tr>
+ <th class="align-middle white-space-nowrap text-center" scope="col">#</th>
+ <th class="align-middle white-space-nowrap text-start" scope="col">TÊN</th>
+ <th class="align-middle white-space-nowrap text-start" scope="col">EMAIL</th>
+ </tr>
+ </thead>
+
+
+ <tbody class="list-data" id="data_table_body">
+ <tr class="loading-data">
+ <td class="text-center" colspan="4">
+ <div class="spinner-border text-info spinner-border-sm" role="status"><span
+ class="visually-hidden">Loading...</span>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ <div class="paginations"></div>
+ </div>
+ </div>
+ </div>
+<?php $this->stopSection(); ?>
+<?php $this->startSection('script'); ?>
+ <script>
+ var request = new RequestServer("<?php echo \htmlentities(route('api.users.index')??'', ENT_QUOTES, 'UTF-8', false); ?>");
+ request.colspan = 4;
+ request.insert = (data) => {
+ let content = data.map((item, index) => {
+ return `
+ <tr>
+ <td class="align-middle white-space-nowrap text-center">${request.index++}</td>
+ <td class="align-middle white-space-nowrap text-start">${item.name}</td>
+ <td class="align-middle white-space-nowrap text-start">${item.email}</td>
+ </tr>
+ `;
+ }).join("");
+ return content;
+ }
+
+ let searchModal = new HandleForm("#searchModal");
+ document.addEventListener("DOMContentLoaded", async function() {
+ await request.get();
+ console.log(request.params);
+ searchModal.showValue(request.params);
+ });
+
+ searchModal.setChoice();
+ searchModal.submit = function(e) {
+ e.preventDefault();
+ let value = this.value().get();
+ request.params = value;
+ request.get();
+ }
+
+ function removeFilter() {
+ request.reset();
+ searchModal.reset();
+ }
+ </script>
+<?php $this->stopSection(); ?>
+
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layouts.app'); } ?>

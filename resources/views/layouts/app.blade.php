@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{{ asset('css/leaflet.css">') }}">
     <link rel="stylesheet" href="{{ asset('css/MarkerCluster.css">') }}">
     <link rel="stylesheet" href="{{ asset('css/MarkerCluster.Default.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/custom-style.css') }}">
+    <link rel="stylesheet" href="{{ css('custom-style.css') }}">
     <title>@yield('title')</title>
 </head>
 
@@ -150,7 +150,8 @@
                         </li>
                         <li>
                             <a class="dropdown-item" href="/san-pham/vo-may-xa-kep">
-                                <div class="dropdown-item-wrapper"><span class="me-2 uil" data-feather="minus"></span>Vỏ
+                                <div class="dropdown-item-wrapper"><span class="me-2 uil"
+                                        data-feather="minus"></span>Vỏ
                                     máy - Xà kẹp</div>
                             </a>
                         </li>
@@ -218,9 +219,11 @@
                 </div>
             </li>
             <li class="nav-item dropdown"><button class="nav-link lh-1 pe-0" id="navbarDropdownUser"
-                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
+                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true"
+                    aria-expanded="false">
                     <div class="avatar avatar-l ">
-                        <img class="rounded-circle " src="{{ asset('img/teams/avatar-rounded.webp') }}" alt="avatar" />
+                        <img class="rounded-circle " src="{{ asset('img/teams/avatar-rounded.webp') }}"
+                            alt="avatar" />
                     </div>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end navbar-dropdown-caret py-0 dropdown-profile shadow border"
@@ -238,19 +241,19 @@
                         </div>
                         <div class="overflow-auto scrollbar" style="height: 10rem;">
                             <ul class="nav d-flex flex-column mb-2 pb-1">
-                                <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-body"
-                                            data-feather="user"></span><span>Trang cá
+                                <li class="nav-item"><a class="nav-link px-3" href="#!"> <span
+                                            class="me-2 text-body" data-feather="user"></span><span>Trang cá
                                             nhân</span></a></li>
-                                <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-body"
-                                            data-feather="pie-chart"></span>Trang chủ</a></li>
-                                <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-body"
-                                            data-feather="lock"></span>Hoạt động</a></li>
-                                <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-body"
-                                            data-feather="settings"></span>Cài đặt </a></li>
-                                <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-body"
-                                            data-feather="help-circle"></span>Trợ giúp</a></li>
-                                <li class="nav-item"><a class="nav-link px-3" href="#!"> <span class="me-2 text-body"
-                                            data-feather="globe"></span>Ngôn ngữ</a></li>
+                                <li class="nav-item"><a class="nav-link px-3" href="#!"> <span
+                                            class="me-2 text-body" data-feather="pie-chart"></span>Trang chủ</a></li>
+                                <li class="nav-item"><a class="nav-link px-3" href="#!"> <span
+                                            class="me-2 text-body" data-feather="lock"></span>Hoạt động</a></li>
+                                <li class="nav-item"><a class="nav-link px-3" href="#!"> <span
+                                            class="me-2 text-body" data-feather="settings"></span>Cài đặt </a></li>
+                                <li class="nav-item"><a class="nav-link px-3" href="#!"> <span
+                                            class="me-2 text-body" data-feather="help-circle"></span>Trợ giúp</a></li>
+                                <li class="nav-item"><a class="nav-link px-3" href="#!"> <span
+                                            class="me-2 text-body" data-feather="globe"></span>Ngôn ngữ</a></li>
                             </ul>
                         </div>
                         <div class="card-footer p-2 border-top border-translucent">
@@ -268,6 +271,82 @@
         </ul>
     </nav>
     @yield('content')
+    <footer class="footer position-absolute">
+        <div class="row g-0 justify-content-between align-items-center h-100">
+            <div class="col-12 col-sm-auto text-center">
+                <p class="mb-0 mt-2 mt-sm-0 text-body">Sản phẩm được phát triển bởi<a class="mx-1"
+                        href="https://asfy.vn">ASFY TECH</a>
+                    <span class="d-none d-sm-inline-block"></span><span
+                        class="d-none d-sm-inline-block mx-1">|</span><br class="d-sm-none" /> &copy;
+                    <?php echo date('Y'); ?>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalSuccessNotification" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content border border-translucent shadow-lg">
+                <div>
+                    <div class="modal-header px-card border-0">
+                        <div class="w-100 d-flex justify-content-center align-items-start">
+                            <div>
+                                <h5 class="mb-0 lh-sm text-success success-message">thông báo</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center align-items-center border-0">
+                        <a class="open-link" href="javascript:" hidden title="Xem"><button
+                                class="btn btn-sm btn-phoenix-primary text-center px-3" type="button"><span
+                                    class="fs-8">Xem</span></button></a>
+                        <button class="btn btn-phoenix-secondary pe-4" type="button" data-bs-dismiss="modal"
+                            aria-label="Close">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalErrorNotification" tabindex="-1"
+        aria-labelledby="modalSuccessNotificationLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content border border-translucent shadow-lg">
+                <div>
+                    <div class="modal-header px-card border-0">
+                        <div class="w-100 d-flex justify-content-center align-items-start">
+                            <div>
+                                <p class="mb-0 fs-7 lh-sm text-danger error-message text-center"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center align-items-center border-0">
+                        <button class="btn btn-secondary text-center px-3" type="button" data-bs-dismiss="modal"
+                            aria-label="Close"><span class="fs-8">Đóng</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalConfirmDelete" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content border border-translucent">
+                <div>
+                    <div class="modal-header px-card border-0">
+                        <div class="w-100 d-flex justify-content-center align-items-start">
+                            <div>
+                                <h5 class="mb-0 lh-sm text-body-highlight confirm-message">lỗi</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer d-flex justify-content-center align-items-center border-0">
+                        <button class="btn btn-danger px-4 btn-confirm" title="Xoá">Xoá</button>
+                        <button class="btn btn-secondary pe-4" type="button" data-bs-dismiss="modal"
+                            aria-label="Close">Huỷ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 
@@ -287,10 +366,10 @@
 <script src="{{ asset('js/flatpickr.min.js') }}"></script>
 <script src="{{ asset('js/vn.js') }}"></script>
 <script src="{{ asset('js/choices.min.js') }}"></script>
-<script src="{{ asset('js/custom.js') }}"></script>
-<script src="{{ asset('js/customClass.js') }}"></script>
 <script src="{{ asset('js/chart.js') }}"></script>
 <script src="{{ asset('js/axios.js') }}"></script>
+<script src="{{ js('custom.js') }}"></script>
+<script src="{{ js('customClass.js') }}"></script>
 
 @yield('script')
 

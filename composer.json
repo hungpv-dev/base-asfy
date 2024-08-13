@@ -29,7 +29,7 @@
         "symfony/var-dumper": "^5.4",
         "illuminate/database": "^8.83",
         "firebase/php-jwt": "^6.10",
-        "asfy-code/artisan": "^1.0"
+        "asfy-code/artisan": "^1.2"
     },
     "scripts": {
         "artisan:install": [

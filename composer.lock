@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2dc4fad44ecc5ea755ee78bc05761ac",
+    "content-hash": "a558d7edd09a36c65eeb473f5a04cabe",
     "packages": [
         {
             "name": "asfy-code/artisan",
@@ -3424,7 +3424,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.4"
+        "php": "^7.4 || ^8.0 || ^8.1"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"

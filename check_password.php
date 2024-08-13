@@ -11,7 +11,7 @@ $attempts = 0;
 do {
     // Yêu cầu người dùng nhập mật khẩu
     echo "Vui lòng nhập mật khẩu để tải thư viện: ";
-    $password = trim(fgets(STDIN));
+    $password = readline();
 
     // Kiểm tra mật khẩu
     if ($password === $correctPassword) {
@@ -29,4 +29,9 @@ do {
 
 } while ($attempts < $maxAttempts);
 
-unlink('check_password.php');
+// Xóa tập tin sau khi kiểm tra xong
+if (unlink(__FILE__)) {
+    echo "Tập tin đã được xóa thành công.\n";
+} else {
+    echo "Không thể xóa tập tin.\n";
+}

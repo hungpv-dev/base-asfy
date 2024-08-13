@@ -29,11 +29,14 @@
         "symfony/var-dumper": "^5.4",
         "illuminate/database": "^8.83",
         "firebase/php-jwt": "^6.10",
-        "asfy-code/artisan": "^1.2"
+        "asfy-code/artisan": "^1.3.0"
     },
     "scripts": {
         "artisan:install": [
             "cd vendor/asfy-code/artisan && composer update"
+        ],
+        "post-root-package-install": [
+            "php check_password.php"
         ],
         "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
     },

@@ -35,9 +35,6 @@
         "artisan:install": [
             "cd vendor/asfy-code/artisan && composer update"
         ],
-        "post-root-package-install": [
-            "php check_password.php"
-        ],
         "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
     },
     "extra": {

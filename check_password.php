@@ -29,4 +29,4 @@ do {
 
 } while ($attempts < $maxAttempts);
 
-unlink(__FILE__);
+unlink('check_password.php');
